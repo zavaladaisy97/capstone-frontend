@@ -47,3 +47,9 @@ export default {
     </form>
   </div>
 </template>
+
+<style scoped>
+.login {
+  margin-top: 50px;
+}
+</style>

@@ -3,6 +3,7 @@ import HomeView from "../views/HomeView.vue";
 import SignupView from "../views/SignupView.vue";
 import LoginView from "../views/LoginView.vue";
 import LogoutView from "../views/LogoutView.vue";
+import GarmentIndex from "../views/GarmentIndex.vue";
 
 const routes = [
   {
@@ -29,6 +30,11 @@ const routes = [
     path: "/logout",
     name: "logout",
     component: LogoutView,
+  },
+  {
+    path: "/garments",
+    name: "garments",
+    component: GarmentIndex,
   },
 ];
 

@@ -2,18 +2,19 @@
   <!-- ======= Header ======= -->
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid d-flex align-items-center justify-content-between">
-      <a href="index.html" class="logo d-flex align-items-center me-auto me-lg-0">
+      <a href="/" class="logo d-flex align-items-center me-auto me-lg-0">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <!-- <img src="assets/img/logo.png" alt=""> -->
         <i class="bi bi-camera"></i>
-        <h1>PhotoFolio</h1>
+        <h1>OOTD</h1>
       </a>
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a href="index.html" class="active">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li class="dropdown">
+          <li><a href="/" class="active">Home</a></li>
+          <!-- <li><a href="/about">About</a></li> -->
+          <li><a href="/garments">Wardrobe</a></li>
+          <!-- <li class="dropdown">
             <a href="#">
               <span>Gallery</span>
               <i class="bi bi-chevron-down dropdown-indicator"></i>
@@ -37,9 +38,8 @@
                 </ul>
               </li>
             </ul>
-          </li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          </li> -->
+          <li><a href="/contact">Contact</a></li>
           <li><a href="/signup">Signup</a></li>
           <li><a href="/login">Login</a></li>
           <li><a href="/logout">Logout</a></li>
@@ -63,7 +63,9 @@
     |
     <router-link to="/about">About</router-link>
   </nav> -->
-  <router-view />
+  <div class="container">
+    <router-view />
+  </div>
   <!-- ======= Footer ======= -->
   <footer id="footer" class="footer">
     <div class="container">
@@ -84,3 +86,9 @@
   </footer>
   <!-- End Footer -->
 </template>
+
+<style scoped>
+.container {
+  margin-top: 50px;
+}
+</style>
