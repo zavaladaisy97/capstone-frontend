@@ -52,6 +52,7 @@ export default {
       }
     },
     createGarment: function () {
+      console.log("hello");
       var formData = new FormData();
       formData.append("name", this.garmentName);
       formData.append("color_id", this.garmentColorId);
@@ -64,8 +65,11 @@ export default {
         this.garmentImage = "";
         this.garmentCategoryId = "";
         this.garmentColorId = "";
-        // this.$refs.fileInput.value = "";
+        this.garmentImageFile = "";
         console.log(response.data);
+        var modal = document.getElementById("#exampleModalCenter");
+        modal.style.display = "none";
+        this.indexGarments();
       });
     },
   },
@@ -159,12 +163,8 @@ export default {
                     {{ category.name }}
                   </option>
                 </select>
-                <input type="submit" value="Submit Item" />
+                <input type="submit" class="btn btn-primary" value="Submit Item" />
               </form>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Save changes</button>
             </div>
           </div>
         </div>
