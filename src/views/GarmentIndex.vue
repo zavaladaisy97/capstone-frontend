@@ -67,9 +67,7 @@ export default {
         this.garmentColorId = "";
         this.garmentImageFile = "";
         console.log(response.data);
-        var modal = document.getElementById("#exampleModalCenter");
-        modal.style.display = "none";
-        this.indexGarments();
+        this.$router.go();
       });
     },
   },
@@ -215,5 +213,15 @@ export default {
 }
 .list-leave-active {
   position: absolute;
+}
+.button {
+  background-color: MediumSeaGreen; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
 }
 </style>
